@@ -1,0 +1,238 @@
+body {
+	background-image: url("gradient.jpg");
+	background-repeat: no-repeat;
+}
+
+.homepage {
+	height:auto;
+	margin: -10px;
+}
+
+.fullpage {
+	width:100%;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	margin-left: -10px;
+	height: 170px;
+	margin-top: -190px;
+	background-color: #000;
+	box-shadow: 0px 5px 5px gray;
+}
+
+.logo {
+	position: absolute;
+	left: 41%;
+	height: 75%;
+	margin: 25px;
+}
+
+.content {
+	margin-top: 180px;
+}
+
+/*** HOME MENU ***/
+
+.menu-toggler {
+	position: fixed;
+	display: block;
+	top: 10px;
+	bottom: auto;
+	right: 60px;
+	left: auto;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+	opacity: 0;
+	cursor: pointer;
+}
+.menu-toggler:hover + label, .menu-toggler:hover + label:before, .menu-toggler:hover + label:after {
+	background: #000;
+}
+
+.menu-toggler:checked + label {
+	background: transparent;
+}
+.menu-toggler:checked + label:before, .menu-toggler:checked + label:after {
+	top: 0;
+	width: 40px;
+	-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+}
+.menu-toggler:checked + label:before {
+	-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+}
+.menu-toggler:checked + label:after {
+	-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+}
+
+.menu-toggler:checked ~ ul .menu-item {
+	opacity: 1;
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+	-webkit-transform: rotate(245deg) translateX(-110px);
+		transform: rotate(245deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+	-webkit-transform: rotate(285deg) translateX(-110px);
+		transform: rotate(285deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+	-webkit-transform: rotate(325deg) translateX(-110px);
+		transform: rotate(325deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+	-webkit-transform: rotate(365deg) translateX(-110px);
+		transform: rotate(365deg) translateX(-110px);
+}
+.menu-toggler:checked ~ ul .menu-item a {
+	pointer-events: auto;
+}
+
+.menu-toggler + label {
+	width: 40px;
+	height: 5px;
+	display: block;
+	z-index: 1;
+	border-radius: 2.5px;
+	background: rgba(62, 54, 139, 0.7);
+	-webkit-transition: top 0.5s, -webkit-transform 0.5s;
+	transition: top 0.5s, -webkit-transform 0.5s;
+	transition: transform 0.5s, top 0.5s;
+	transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;
+	position: absolute;
+	display: block;
+	top: 45px;
+	bottom: auto;
+	right: 75px;
+	left: auto;
+	margin: auto;
+}
+.menu-toggler + label:before, .menu-toggler + label:after {
+	width: 40px;
+	height: 5px;
+	display: block;
+	z-index: 1;
+	border-radius: 2.5px;
+	background: rgba(62, 54, 139, 0.7);
+	-webkit-transition: top 0.5s, -webkit-transform 0.5s;
+	transition: top 0.5s, -webkit-transform 0.5s;
+	transition: transform 0.5s, top 0.5s;
+	transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;
+	content: "";
+	position: absolute;
+	left: 0;
+}
+.menu-toggler + label:before {
+	top: 10px;
+}
+.menu-toggler + label:after {
+	top: -10px;
+}
+
+.menu-item:nth-child(1) a {
+	-webkit-transform: rotate(-245deg);
+		transform: rotate(-245deg);
+	font-size: 0px;
+	background-image: url("contact.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-item:nth-child(2) a {
+	-webkit-transform: rotate(-283deg);
+		transform: rotate(-283deg);
+	font-size: 0px;
+	background-image: url("portfolio.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-item:nth-child(3) a {
+	-webkit-transform: rotate(-323deg);
+		transform: rotate(-323deg);
+	font-size: 0px;
+	background-image: url("about.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-item:nth-child(4) a {
+	-webkit-transform: rotate(-365deg);
+		transform: rotate(-365deg);
+	font-size: 0px;
+	background-image: url("linkedin.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-item {
+	position: absolute;
+	display: block;
+	top: 10px;
+	bottom: auto;
+	right: 60px;
+	left: auto;
+	margin: auto;
+	width: 80px;
+	height: 80px;
+	display: block;
+	opacity: 0;
+	-webkit-transition: 0.5s;
+		transition: 0.5s;
+}
+
+.menu-item a {
+	display: block;
+	width: inherit;
+	height: inherit;
+	line-height: 80px;
+	color: rgba(0, 0, 0, 0.7);
+	background: rgba(62, 54, 139, 0.2);
+	border-radius: 50%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+	pointer-events: none;
+	-webkit-transition: .2s;
+		transition: .2s;
+}
+.menu-item a:hover {
+	box-shadow: 0 0 0 2px rgba(62, 54, 139, 0.3);
+	color: #000;
+	background: rgba(62, 54, 139, 0.3);
+	font-size: 20px;
+}
+
+/*** HORIZONTAL MENU ***/
+.horizontal-menu {
+	margin-top: 85px;
+}
+
+.horizontal-menu a {
+	font-family: "Myanmar MN", sans-serif;
+	text-decoration: none;
+	color: #d6e2ff;
+	font-size: 20px;
+	font-style: normal;
+}
+
+.contact {
+	margin-left: 15%;
+}
+
+.portfolio {
+	margin-left: 10%;
+}
+
+.about {
+	margin-left: 24%;
+}
+
+.linkedin {
+	margin-left: 10%;
+}
