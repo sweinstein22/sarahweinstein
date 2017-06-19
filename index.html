@@ -8,35 +8,37 @@
 	<link rel="shortcut icon" href="https://github.com/sweinstein22/sweinstein22.github.io/blob/master/lightlogo.png" />
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-
-<body>
-	<div class="homepage">
-		<img class="fullpage" src="frontpage.jpg" />
+<body class="animate-in">
+	<div id="homepage">
+		<img id="fullpage" src="frontpage.jpg" />
 	</div>
-
-	<nav class="menu">
-		<input class="menu-toggler" id="menu-toggler" type="checkbox">
+	<nav id="menu">
+		<input id="menu-toggler" id="menu-toggler" type="checkbox">
 		<label for="menu-toggler"></label>
 		<ul>
-		<li class="menu-item">
+		<li id="menu-item">
 		  <a href="contact.html">Contact</a>
 		</li>
-		<li class="menu-item">
+		<li id="menu-item">
 		  <a href="https://www.google.com/" target="_blank">Portfolio</a>
 		</li>
-		<li class="menu-item">
-		  <a href="https://google.com/" target="_blank">About</a>
+		<li id="menu-item">
+		  <a href="about.html">About</a>
 		</li>
-		<li class="menu-item">
+		<li id="menu-item">
 		  <a href="https://www.linkedin.com/in/sarah-weinstein/" target="_blank">LinkedIn</a>
 		</li>
 		</ul>
 	</nav>
+	<script type="text/javascript">
+		window.addEventListener("beforeunload", function () {
+		  document.body.classList.add("animate-out");
+		}); 
+	</script>
 </body>
 <!--
 	Credits:
 	navbar: https://codepen.io/hadarweiss/pen/WvEXeK
 	icons: https://flaticon.com/  authors: MadeByOliver, EpicCoders, Gregor Cresnar, Freepik
 -->
-
 </html>
