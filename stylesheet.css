@@ -4,8 +4,6 @@
 }
 
 body {
-	background-image: url("gradient.jpg");
-	background-repeat: no-repeat;
 	opacity: 1;
     transition: 1s opacity;
 }
@@ -18,11 +16,13 @@ body.fade-out {
 #about_body{
 	background-image: url("aboutbackground.jpg");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 #contact_body{
 	background-image: url("contactbackground.jpg");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 #homepage {
@@ -39,18 +39,12 @@ body.fade-out {
 	position: fixed;
 	margin-left: -10px;
 	margin-right: -10px;
+	z-index: 10;
 	height: 170px;
 	margin-top: -190px;
 	margin-bottom: auto;
 	background-color: #000;
 	box-shadow: 0px 5px 5px gray;
-}
-
-#logo {
-	position: absolute;
-	left: 41%;
-	height: 75%;
-	margin: 25px;
 }
 
 #about_info {
@@ -71,7 +65,9 @@ body.fade-out {
 	margin-left: 53%;
 	height: 300px;
 	width: auto;
-	box-shadow: 5px 5px 5px gray;
+	border-radius: 12px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-sizing: border-box;
 }
 
 #contact_portrait {
@@ -79,7 +75,9 @@ body.fade-out {
 	margin-left: 20%;
 	height: 300px;
 	width: auto;
-	box-shadow: 5px 5px 5px gray;
+	border-radius: 12px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-sizing: border-box;
 }
 
 /** FADE EFFECTS **/
@@ -308,8 +306,15 @@ body.fade-out {
 	font-style: normal;
 }
 
+#horizontal-menu a:hover {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 20px;
+	font-style: normal;
+}
+
 #about {
-	margin-left: 15%;
+	margin-left: 17%;
 }
 
 #portfolio {
@@ -325,7 +330,14 @@ body.fade-out {
 }
 
 /** ABOUT CATEGORIES **/
-#about_categories{
+#logo {
+	position: absolute;
+	left: 42%;
+	height: 75%;
+	margin: 25px;
+}
+
+#about_categories {
     padding: 0px;
     margin: -28% 35% 10px auto;
 }
@@ -390,4 +402,3 @@ body.fade-out {
          -o-animation: fadein 2s;
             animation: fadein 2s;
 }
-

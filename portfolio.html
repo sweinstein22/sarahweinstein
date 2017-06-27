@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="portfoliostyle.css">
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="portfolioslider.js"></script>
+<script src="portfoliopopups.js"></script>
+</head>
+<body id="portfolio_body">
+	<div id="header">
+		<a href="index.html"><img id="logo" src="lightlogo.png" /></a>
+		<div id="horizontal-menu">
+			<a href="about.html" id="about">About</a>
+			<a href="portfolio.html" id="portfolio">Portfolio</a>
+		 	<a href="https://www.linkedin.com/in/sarah-weinstein/" target="_blank" id="linkedin">LinkedIn</a>
+			<a href="contact.html" id="contact">Contact</a>
+		</div>
+	</div>
+	<section class="main">
+	<div class="thumbnail_container">
+		<div class="thumbnails">
+			<div class="thumbnail active" product-id="1">
+				<img class="uxui_thumb1" id="uxui_thumb1" src="portfolio_images/atmosclear_homescreen_nighttime.jpg"/>
+				<img class="uxui_thumb2" id="uxui_thumb2" src="portfolio_images/atmosclear_homescreen.jpg"/>
+				<img class="uxui_thumb3" id="uxui_thumb3" src="portfolio_images/atmosclear_lofi_prototyping.jpg"/>
+			</div>
+			<div class="thumbnail" product-id="2">
+				<img class="websites_thumb1" id="websites_thumb1" src="portfolio_images/website_ccmd.png"/>
+				<img class="websites_thumb2" id="websites_thumb2" src="portfolio_images/website_maggiephillips.png"/>
+				<img class="websites_thumb3" id="websites_thumb3" src="portfolio_images/website_montessori.png"/>
+				<img class="websites_thumb4" id="websites_thumb4" src="portfolio_images/website_partylink.png"/>
+			</div>
+			<div class="thumbnail" product-id="3">
+				<img class="branding_thumb1" id="branding_thumb1" src="portfolio_images/logo_montessori.png"/>
+				<img class="branding_thumb2" id="branding_thumb2" src="portfolio_images/logo_maggiephillips.png"/>
+				<img class="branding_thumb3" id="branding_thumb3" src="portfolio_images/logo_ccmd.png"/>
+			</div>
+			<div class="thumbnail" product-id="4">
+				<img class="printwork_thumb1" id="printwork_thumb1" src="portfolio_images/printwork_bgw.jpg"/>
+				<img class="printwork_thumb2" id="printwork_thumb2" src="portfolio_images/printwork_bgw1.jpg"/>
+				<img class="printwork_thumb3" id="printwork_thumb3" src="portfolio_images/printwork_homecoming.jpg"/>
+				<img class="printwork_thumb4" id="printwork_thumb4" src="portfolio_images/printwork_ww.jpg"/>
+				<img class="printwork_thumb5" id="printwork_thumb5" src="portfolio_images/printwork_charterweek.jpg"/>
+			</div>
+			<div class="thumbnail" product-id="5">
+				<img class="snapchat_thumb1" id="snapchat_thumb1" src="portfolio_images/filter_bgw.png"/>
+				<img class="snapchat_thumb2" id="snapchat_thumb2" src="portfolio_images/filter_hearst_mining.png"/>
+				<img class="snapchat_thumb3" id="snapchat_thumb3" src="portfolio_images/filter_homecoming.png"/>
+				<img class="snapchat_thumb4" id="snapchat_thumb4" src="portfolio_images/filter_bgw1.png"/>
+				<img class="snapchat_thumb5" id="snapchat_thumb5" src="portfolio_images/filter_sather.png"/>
+			</div>
+		</div>
+	</div>
+	<div class="main_container">
+		<div class="card">
+			<div class="products">
+				<div class="product active" product-id="1">
+					<h1 class="title">UX/UI Design</h1>
+					<p class="description">Intuitive, beautiful user experiences created through elegant design solutions</p>
+					<p class="click">Click images for more information</p>
+				</div>
+				<div class="product" product-id="2">
+					<h1 class="title">Web Design</h1>
+					<p class="description">Dynamic, informative, cohesive websites for individuals and small businesses</p>
+					<p class="click">Click images for more information</p>
+				</div>
+				<div class="product" product-id="3">
+					<h1 class="title">Logo Design &amp; Branding</h1>
+					<p class="description">Unique identities created through collaboration with clients in order to bring forward their personality and message</p>
+					<p class="click">Click images for more information</p>
+				</div>
+				<div class="product" product-id="4">
+					<h1 class="title">Print Work</h1>
+					<p class="description">Posters and flyers, designed to be printed and distributed</p>
+					<p class="click">Click images for more information</p>
+				</div>
+				<div class="product" product-id="5">
+					<h1 class="title">Snapchat Geofilters</h1>
+					<p class="description">Event filters reaching thousands of individuals through the social media platform Snapchat</p>
+					<p class="click">Click images for more information</p>
+				</div>
+			</div>
+			<div class="footer">
+				<a class="btn" id="prev" href="#" ripple="" ripple-color="#666666">Prev</a>
+				<a class="btn" id="next" href="#" ripple="" ripple-color="#666666">Next</a>
+			</div>
+		</div>
+	</div>
+	<div id="uxui_thumb1_modal">
+		<span id="close_1" class="close">&times;</span>
+		<img class="modal-content" id='img01' src='/portfolio_images/large/atmosclear_homescreen.png'>
+		<div id="uxui_thumb1_caption">
+			Atmosclear - Night View
+			<br/><br/>
+			While creating a hifi prototype of a weather application for astronomers, my team found that one of the most important aspects of catering to our stakeholder group was the inclusion of a night view. This view is specifically designed so as not to ruin an astronomers night vision. While most bright lights require astronomers to give their eyes time to adjust, red light does not have this effect.
+			<br/><br/>
+			Selecting the symbol at the top right corner of the application transforms the colorscheme from purples, useful while indoors or during daylight hours, to a strictly black and red view.
+		</div>
+	</div>
+	<div id="uxui_thumb2_modal">
+		<span id="close_2" class="close">&times;</span>
+		<img class="modal-content" id='img02'>
+		<div id="uxui_thumb2_caption">
+			Atmosclear - Day View and General Concept
+			<br/><br/>
+			As part of a team of developers, I helped design a hifi prototype of a weather app for aspiring astronomers. We collaborated to create an application which emphasized the elements that astronomers place most importance on, as discovered through a variety of data gathering techniques.
+			<br/><br/>
+			In particular, these methods included interviews, surveys, and user testing. We reached out to local amateur astronomy groups, professors and students of astronomy, and astronomy groups on social media to ensure that our application catered to our specific stakeholder group.
+		</div>
+	</div>
+	<div id="uxui_thumb3_modal">
+		<span id="close_3" class="close">&times;</span>
+		<img class="modal-content" id='img03'>
+		<div id="uxui_thumb3_caption">
+			Atmosclear - User Testing and Data Gathering
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="websites_thumb1_modal">
+		<span id="close_4" class="close">&times;</span>
+		<img class="modal-content" id='img04'>
+		<div id="websites_thumb1_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="websites_thumb2_modal">
+		<span id="close_5" class="close">&times;</span>
+		<img class="modal-content" id='img05'>
+		<div id="websites_thumb2_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="websites_thumb3_modal">
+		<span id="close_6" class="close">&times;</span>
+		<img class="modal-content" id='img06'>
+		<div id="websites_thumb3_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="websites_thumb4_modal">
+		<span id="close_7" class="close">&times;</span>
+		<img class="modal-content" id='img07'>
+		<div id="websites_thumb4_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="branding_thumb1_modal">
+		<span id="close_8" class="close">&times;</span>
+		<img class="modal-content" id='img08'>
+		<div id="branding_thumb1_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="branding_thumb2_modal">
+		<span id="close_9" class="close">&times;</span>
+		<img class="modal-content" id='img09'>
+		<div id="branding_thumb2_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="branding_thumb3_modal">
+		<span id="close_10" class="close">&times;</span>
+		<img class="modal-content" id='img10'>
+		<div id="branding_thumb3_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="printwork_thumb1_modal">
+		<span id="close_11" class="close">&times;</span>
+		<img class="modal-content" id='img11'>
+		<div id="printwork_thumb1_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="printwork_thumb2_modal">
+		<span id="close_12" class="close">&times;</span>
+		<img class="modal-content" id='img12'>
+		<div id="printwork_thumb2_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="printwork_thumb3_modal">
+		<span id="close_13" class="close">&times;</span>
+		<img class="modal-content" id='img13'>
+		<div id="printwork_thumb3_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="printwork_thumb4_modal">
+		<span id="close_14" class="close">&times;</span>
+		<img class="modal-content" id='img14'>
+		<div id="printwork_thumb4_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="printwork_thumb5_modal">
+		<span id="close_15" class="close">&times;</span>
+		<img class="modal-content" id='img15'>
+		<div id="printwork_thumb5_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="snapchat_thumb1_modal">
+		<span id="close_16" class="close">&times;</span>
+		<img class="modal-content" id='img16'>
+		<div id="snapchat_thumb1_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="snapchat_thumb2_modal">
+		<span id="close_17" class="close">&times;</span>
+		<img class="modal-content" id='img17'>
+		<div id="snapchat_thumb2_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="snapchat_thumb3_modal">
+		<span id="close_18" class="close">&times;</span>
+		<img class="modal-content" id='img18'>
+		<div id="snapchat_thumb3_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="snapchat_thumb4_modal">
+		<span id="close_19" class="close">&times;</span>
+		<img class="modal-content" id='img19'>
+		<div id="snapchat_thumb4_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+	<div id="snapchat_thumb5_modal">
+		<span id="close_20" class="close">&times;</span>
+		<img class="modal-content" id='img20'>
+		<div id="snapchat_thumb5_caption">
+			TITLE
+			<br/><br/>
+			WORDS HERE
+		</div>
+	</div>
+</body>
+<!-- Credits:
+	card slider: https://codepen.io/andytran/pen/xweoPN
+-->
+</html>
