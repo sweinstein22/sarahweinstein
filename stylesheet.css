@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Tenor+Sans');
+
 * {
-	font-family: "Myanmar MN", sans-serif;
+	font-family: "Myanmar MN", "Tenor Sans", sans-serif;
 	color: #000;
 }
 
