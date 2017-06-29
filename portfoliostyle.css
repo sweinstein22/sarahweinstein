@@ -405,13 +405,33 @@
 #snapchat_thumb3_caption,
 #snapchat_thumb4_caption,
 #snapchat_thumb5_caption {
-    display: block;
     margin: -42% 100px 150px 0;
     width: 30%;
-    float:right;
+    height: auto;
+    float: right;
     text-align: left;
     color: #d6e2ff;
     overflow: scroll;
+}
+
+#uxui_thumb3_caption{
+	margin: -82% 100px 150px 0;
+}
+
+
+#printwork_thumb3_caption,
+#printwork_thumb4_caption,
+#printwork_thumb5_caption {
+	margin-top: -70%;
+}
+
+.overlay a {
+	color: #FFF;
+	text-decoration: none;
+}
+.overlay a:hover {
+	color: #D3D3D3;
+	text-decoration: none;
 }
 
 /* MODAL ANIMATION */

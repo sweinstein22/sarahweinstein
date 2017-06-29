@@ -11,15 +11,15 @@ $(document).ready(function() {
 	var branding_thumb2_img = document.getElementById("img09");
 	var branding_thumb3_img = document.getElementById("img10");
 	var printwork_thumb1_img = document.getElementById("img11");
-	var printwork_thumb2_img = document.getElementById("img12");
+	/* printwork_thumb2 matches printwork_thumb1 */
 	var printwork_thumb3_img = document.getElementById("img13");
 	var printwork_thumb4_img = document.getElementById("img14");
 	var printwork_thumb5_img = document.getElementById("img15");
 	var snapchat_thumb1_img = document.getElementById("img16");
 	var snapchat_thumb2_img = document.getElementById("img17");
 	var snapchat_thumb3_img = document.getElementById("img18");
-	var snapchat_thumb4_img = document.getElementById("img19");
-	var snapchat_thumb5_img = document.getElementById("img20");
+	/* snapchat_thumb4 matches snapchat_thumb1 
+	   snapchat_thumb5 matches snapchat_thumb2 */
 	
 	uxui_thumb1.onclick = function() {
 	    uxui_thumb1_modal.style.display = "block";
@@ -63,23 +63,23 @@ $(document).ready(function() {
 	}
 	printwork_thumb1.onclick = function() {
 	    printwork_thumb1_modal.style.display = "block";
-	    printwork_thumb1_img.src='portfolio_images/large/atmosclear_daytime.png';
+	    printwork_thumb1_img.src='portfolio_images/large/printwork_bgw1.png';
 	}
 	printwork_thumb2.onclick = function() {
-	    printwork_thumb2_modal.style.display = "block";
-	    printwork_thumb2_img.src='portfolio_images/large/atmosclear_daytime.png';
+	    printwork_thumb1_modal.style.display = "block";
+	    printwork_thumb1_img.src='portfolio_images/large/printwork_bgw1.png';
 	}
 	printwork_thumb3.onclick = function() {
 	    printwork_thumb3_modal.style.display = "block";
-	    printwork_thumb3_img.src='portfolio_images/large/atmosclear_daytime.png';
+	    printwork_thumb3_img.src='portfolio_images/large/printwork_homecoming.png';
 	}
 	printwork_thumb4.onclick = function() {
 	    printwork_thumb4_modal.style.display = "block";
-	    printwork_thumb4_img.src='portfolio_images/large/atmosclear_daytime.png';
+	    printwork_thumb4_img.src='portfolio_images/large/printwork_ww.png';
 	}
 	printwork_thumb5.onclick = function() {
 	    printwork_thumb5_modal.style.display = "block";
-	    printwork_thumb5_img.src='portfolio_images/large/atmosclear_daytime.png';
+	    printwork_thumb5_img.src='portfolio_images/large/printwork_charterweek.png';
 	}
 	snapchat_thumb1.onclick = function() {
 	    snapchat_thumb1_modal.style.display = "block";
@@ -94,12 +94,12 @@ $(document).ready(function() {
 	    snapchat_thumb3_img.src='portfolio_images/large/snapchat_homecoming.png';
 	}
 	snapchat_thumb4.onclick = function() {
-	    snapchat_thumb4_modal.style.display = "block";
-	    snapchat_thumb4_img.src='portfolio_images/large/snapchat_bgw.png';
+	    snapchat_thumb1_modal.style.display = "block";
+	    snapchat_thumb1_img.src='portfolio_images/large/snapchat_bgw.png';
 	}
 	snapchat_thumb5.onclick = function() {
-	    snapchat_thumb5_modal.style.display = "block";
-	    snapchat_thumb5_img.src='portfolio_images/large/snapchat_charterweek.png';
+	    snapchat_thumb2_modal.style.display = "block";
+	    snapchat_thumb2_img.src='portfolio_images/large/snapchat_charterweek.png';
 	}
 
 	close_1.onclick = function() { 
@@ -135,9 +135,7 @@ $(document).ready(function() {
 	close_11.onclick = function() {
 	    printwork_thumb1_modal.style.display = "none";
 	}
-	close_12.onclick = function() {
-	    printwork_thumb2_modal.style.display = "none";
-	}
+	/* printwork_thumb2 matches printwork_thumb1 */
 	close_13.onclick = function() {
 	    printwork_thumb3_modal.style.display = "none";
 	}
@@ -156,10 +154,6 @@ $(document).ready(function() {
 	close_18.onclick = function() {
 	    snapchat_thumb3_modal.style.display = "none";
 	}
-	close_19.onclick = function() {
-	    snapchat_thumb4_modal.style.display = "none";
-	}
-	close_20.onclick = function() {
-	    snapchat_thumb5_modal.style.display = "none";
-	}
+	/* snapchat_thumb4 matches snapchat_thumb1
+	   snapchat_thumb5 matches snapchat_thumb2 */
 });
