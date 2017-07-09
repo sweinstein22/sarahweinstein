@@ -28,8 +28,10 @@ body.fade-out {
 }
 
 #homepage {
-	height:auto;
+	width: 101%;
+	height: 101vh;
 	margin: -10px;
+	overflow: hidden;
 }
 
 #fullpage {
@@ -357,6 +359,7 @@ body.fade-out {
 	text-align: right;
 	text-decoration: none;
 	letter-spacing: 1px;
+	cursor: default;
 	-moz-transform: scale(0.5); 
 	-ms-transform: scale(0.5); 
 	-o-transform: scale(0.5); 
@@ -392,7 +395,7 @@ body.fade-out {
 #code:hover ~ #code_text,
 #passions:hover ~ #passions_text,
 #collab:hover ~ #collab_text,
-#off_the_clock:hover ~#off_the_clock_text {
+#off_the_clock:hover ~ #off_the_clock_text {
 	text-align: center;
 	display: block;
 	width: 45%;
@@ -403,4 +406,96 @@ body.fade-out {
         -ms-animation: fadein 2s;
          -o-animation: fadein 2s;
             animation: fadein 2s;
+}
+
+@media only screen and (max-width: 1200px){
+    #educ:hover ~ #education_text,
+	#design:hover ~ #design_text,
+	#code:hover ~ #code_text,
+	#passions:hover ~ #passions_text,
+	#collab:hover ~ #collab_text,
+	#off_the_clock:hover ~#off_the_clock_text {
+    	margin-top: -54%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+
+	#about_portrait {
+		display: block;
+		margin: 10px auto;
+	}
+
+	#about_categories {
+		width: 100%;
+		display: block;
+		margin-left: 7%;
+	}
+
+	#about_categories div:hover {
+		margin-top: 280px;
+		margin-right: 20px;
+	}
+
+	#educ, 
+	#design,
+	#code,
+	#passions,
+	#collab,
+	#off_the_clock,
+	#educ:hover ~ #education_text,
+	#design:hover ~ #design_text,
+	#code:hover ~ #code_text,
+	#passions:hover ~ #passions_text,
+	#collab:hover ~ #collab_text,
+	#off_the_clock:hover ~#off_the_clock_text {
+		display: none;
+	}
+
+	#educ1, 
+	#design1,
+	#code1,
+	#passions1,
+	#collab1,
+	#off_the_clock1 {
+		float: left;
+		cursor: default;
+		font-size: 20px;
+		margin-right: 20px;
+		margin-top: 280px;
+		text-align: left;
+		text-decoration: none;
+		transform: none; 
+	}
+
+	#educ1:hover, 
+	#design1:hover,
+	#code1:hover,
+	#passions1:hover,
+	#collab1:hover,
+	#off_the_clock1:hover {
+		text-align: left;
+		margin-right: 20px;
+		border-bottom: solid;
+		transform: none;
+		transition: none;
+	}
+
+	#educ1:active ~ #education_text,
+	#design1:active ~ #design_text,
+	#code1:active ~ #code_text,
+	#passions1:active ~ #passions_text,
+	#collab1:active ~ #collab_text,
+	#off_the_clock1:active ~ #off_the_clock_text,
+	#educ1:hover ~ #education_text,
+	#design1:hover ~ #design_text,
+	#code1:hover ~ #code_text,
+	#passions1:hover ~ #passions_text,
+	#collab1:hover ~ #collab_text,
+	#off_the_clock1:hover ~ #off_the_clock_text {
+    	display: block;
+    	padding-top: 40%;
+    	padding-left: 15%;
+    	width: 60%;
+    }
 }
