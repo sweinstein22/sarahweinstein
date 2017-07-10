@@ -17,6 +17,13 @@ $(document).ready(function() {
 	var displaySetting = education.style.display;
 
 	if (displaySetting == 'block') {
+		education_text.style.display = 'none';
+		design_text.style.display = 'none';
+		code_text.style.display = 'none';
+		passions_text.style.display = 'none';
+		collab_text.style.display = 'none';
+		off_the_clock_text.style.display = 'none';
+		
 		education.onclick = function() {
 			education_text.style.display = 'block';
 			design_text.style.display = 'none';
@@ -27,7 +34,7 @@ $(document).ready(function() {
 		}
 		design.onclick = function() {
 			education_text.style.display = 'none';
-			design_text.style.display = 'display';
+			design_text.style.display = 'block';
 			code_text.style.display = 'none';
 			passions_text.style.display = 'none';
 			collab_text.style.display = 'none';
@@ -36,7 +43,7 @@ $(document).ready(function() {
 		code.onclick = function() {
 			education_text.style.display = 'none';
 			design_text.style.display = 'none';
-			code_text.style.display = 'display';
+			code_text.style.display = 'block';
 			passions_text.style.display = 'none';
 			collab_text.style.display = 'none';
 			off_the_clock_text.style.display = 'none';
@@ -45,7 +52,7 @@ $(document).ready(function() {
 			education_text.style.display = 'none';
 			design_text.style.display = 'none';
 			code_text.style.display = 'none';
-			passions_text.style.display = 'display';
+			passions_text.style.display = 'block';
 			collab_text.style.display = 'none';
 			off_the_clock_text.style.display = 'none';
 		}
@@ -54,7 +61,7 @@ $(document).ready(function() {
 			design_text.style.display = 'none';
 			code_text.style.display = 'none';
 			passions_text.style.display = 'none';
-			collab_text.style.display = 'display';
+			collab_text.style.display = 'block';
 			off_the_clock_text.style.display = 'none';
 		}
 		off_clock.onclick = function() {
@@ -63,7 +70,7 @@ $(document).ready(function() {
 			code_text.style.display = 'none';
 			passions_text.style.display = 'none';
 			collab_text.style.display = 'none';
-			off_the_clock_text.style.display = 'display';
+			off_the_clock_text.style.display = 'block';
 		}
 	}
-}
+});

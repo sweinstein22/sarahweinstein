@@ -15,13 +15,13 @@ body.fade-out {
     transition: none;
 }
 
-#about_body{
+#about_body {
 	background-image: url("aboutbackground.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-#contact_body{
+#contact_body {
 	background-image: url("contactbackground.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -381,6 +381,12 @@ body.fade-out {
 	transform: scale(1); 
 }
 
+#educ1, 
+#design1,
+#code1,
+#passions1,
+#collab1,
+#off_the_clock1,
 #education_text,
 #design_text,
 #code_text,
@@ -415,13 +421,14 @@ body.fade-out {
 	#passions:hover ~ #passions_text,
 	#collab:hover ~ #collab_text,
 	#off_the_clock:hover ~#off_the_clock_text {
-    	margin-top: -54%;
+    	margin-top: -50%;
     }
 }
 
 @media only screen and (max-width: 1000px){
 
 	#about_portrait {
+		height: 250px;
 		display: block;
 		margin: 10px auto;
 	}
@@ -430,10 +437,11 @@ body.fade-out {
 		width: 100%;
 		display: block;
 		margin-left: 7%;
+		margin-top: -200px;
 	}
 
 	#about_categories div:hover {
-		margin-top: 280px;
+		margin-top: 100px;
 		margin-right: 20px;
 	}
 
@@ -458,11 +466,12 @@ body.fade-out {
 	#passions1,
 	#collab1,
 	#off_the_clock1 {
+		display: block;
 		float: left;
 		cursor: default;
 		font-size: 20px;
 		margin-right: 20px;
-		margin-top: 280px;
+		margin-top: 230px;
 		text-align: left;
 		text-decoration: none;
 		transform: none; 
@@ -494,7 +503,7 @@ body.fade-out {
 	#collab1:hover ~ #collab_text,
 	#off_the_clock1:hover ~ #off_the_clock_text {
     	display: block;
-    	padding-top: 40%;
+    	padding-top: 32%;
     	padding-left: 15%;
     	width: 60%;
     }
