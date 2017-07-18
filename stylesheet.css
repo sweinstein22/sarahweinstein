@@ -313,8 +313,10 @@ body.fade-out {
 #horizontal-menu a:hover {
 	text-decoration: none;
 	color: #FFF;
-	font-size: 20px;
-	font-style: normal;
+}
+
+#horizontal-menu .active {
+	text-decoration: underline;
 }
 
 #about {
@@ -333,7 +335,6 @@ body.fade-out {
 	margin-left: 10%;
 }
 
-/** ABOUT CATEGORIES **/
 #logo {
 	position: absolute;
 	left: 42%;
@@ -341,6 +342,7 @@ body.fade-out {
 	margin: 25px;
 }
 
+/** ABOUT CATEGORIES **/
 #about_categories {
     padding: 0px;
     margin: -28% 35% 10px auto;
@@ -507,4 +509,26 @@ body.fade-out {
     	padding-left: 15%;
     	width: 60%;
     }
+}
+
+@media only screen and (max-width: 1100px){
+    #logo {
+		left: 33%;
+	}
+
+    #about {
+		margin-left: 10%;
+	}
+
+	#portfolio {
+		margin-left: 5%;
+	}
+
+	#linkedin {
+		margin-left: 25%;
+	}
+
+	#contact {
+		margin-left: 5%;
+	}
 }
