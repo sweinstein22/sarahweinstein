@@ -398,15 +398,20 @@ body.fade-out {
 }
 
 /** CONTACT **/
+#content table {
+	padding-top: 90px;
+	width: 100%;
+}
+
+#content .img {
+	text-align: right;
+}
+
 #contact_info {
-	margin-top: -15%;
-	margin-left: 55%;
 	font-size: 20px;
 }
 
 #contact_portrait {
-	margin-top: 7%;
-	margin-left: 20%;
 	height: 300px;
 	width: auto;
 	border-radius: 12px;
