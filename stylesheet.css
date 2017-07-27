@@ -5,6 +5,12 @@
 	color: #000;
 }
 
+#content {
+	margin-top: 180px;
+}
+
+/** BODY STYLES FOR ALL PAGES **/
+
 body {
 	opacity: 1;
     transition: 1s opacity;
@@ -36,52 +42,6 @@ body.fade-out {
 
 #fullpage {
 	width:100%;
-}
-
-#header {
-	width: 100%;
-	position: fixed;
-	margin-left: -10px;
-	margin-right: -10px;
-	z-index: 10;
-	height: 170px;
-	margin-top: -190px;
-	margin-bottom: auto;
-	background-color: #000;
-	box-shadow: 0px 5px 5px gray;
-}
-
-#about_info {
-	margin-left: 15%;
-	margin-top: -25%;
-	text-align: justify;
-	width: 31%;
-}
-
-#contact_info {
-	margin-top: -15%;
-	margin-left: 55%;
-	font-size: 20px;
-}
-
-#about_portrait {
-	margin-top: 7%;
-	margin-left: 53%;
-	height: 300px;
-	width: auto;
-	border-radius: 12px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	box-sizing: border-box;
-}
-
-#contact_portrait {
-	margin-top: 7%;
-	margin-left: 20%;
-	height: 300px;
-	width: auto;
-	border-radius: 12px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	box-sizing: border-box;
 }
 
 /** FADE EFFECTS **/
@@ -119,11 +79,7 @@ body.fade-out {
     to   { opacity: 1; }
 }
 
-#content {
-	margin-top: 180px;
-}
-
-/*** HOME MENU ***/
+/*** HOME PAGE MENU ***/
 
 #menu-toggler {
 	position: fixed;
@@ -300,7 +256,31 @@ body.fade-out {
 
 /*** HORIZONTAL MENU ***/
 #horizontal-menu {
-	margin-top: 85px;
+	width: 100%;
+	position: fixed;
+	margin-left: -10px;
+	margin-right: -10px;
+	z-index: 10;
+	height: 170px;
+	margin-top: -190px;
+	margin-bottom: auto;
+	background-color: #000;
+	box-shadow: 0px 5px 5px gray;
+}
+
+#horizontal-menu table {
+	margin: 0 auto;
+}
+
+#horizontal-menu .link {
+	width: 16%;
+	text-align: center;
+	padding: 0 20px;
+}
+
+#horizontal-menu .logo {
+	width: 34%;
+	text-align: center;
 }
 
 #horizontal-menu a {
@@ -319,27 +299,28 @@ body.fade-out {
 	text-decoration: underline;
 }
 
-#about {
-	margin-left: 17%;
-}
-
-#portfolio {
-	margin-left: 10%;
-}
-
-#linkedin {
-	margin-left: 25%;
-}
-
-#contact {
-	margin-left: 10%;
-}
-
 #logo {
-	position: absolute;
-	left: 42%;
-	height: 75%;
+	height: 21%;
 	margin: 25px;
+}
+
+/** ABOUT **/
+
+#about_info {
+	margin-left: 15%;
+	margin-top: -25%;
+	text-align: justify;
+	width: 31%;
+}
+
+#about_portrait {
+	margin-top: 7%;
+	margin-left: 53%;
+	height: 300px;
+	width: auto;
+	border-radius: 12px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-sizing: border-box;
 }
 
 /** ABOUT CATEGORIES **/
@@ -414,6 +395,23 @@ body.fade-out {
         -ms-animation: fadein 2s;
          -o-animation: fadein 2s;
             animation: fadein 2s;
+}
+
+/** CONTACT **/
+#contact_info {
+	margin-top: -15%;
+	margin-left: 55%;
+	font-size: 20px;
+}
+
+#contact_portrait {
+	margin-top: 7%;
+	margin-left: 20%;
+	height: 300px;
+	width: auto;
+	border-radius: 12px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1200px){
@@ -509,26 +507,4 @@ body.fade-out {
     	padding-left: 15%;
     	width: 60%;
     }
-}
-
-@media only screen and (max-width: 1100px){
-    #logo {
-		left: 33%;
-	}
-
-    #about {
-		margin-left: 10%;
-	}
-
-	#portfolio {
-		margin-left: 5%;
-	}
-
-	#linkedin {
-		margin-left: 25%;
-	}
-
-	#contact {
-		margin-left: 5%;
-	}
 }
