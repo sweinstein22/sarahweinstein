@@ -1,0 +1,196 @@
+/** ABOUT STYLES **/
+#about_info {
+	margin-left: 15%;
+	margin-top: -25%;
+	text-align: justify;
+	width: 31%;
+}
+
+.about_portrait {
+	height: 300px;
+	width: auto;
+	margin-top: 27%;
+	border-radius: 12px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-webkit-animation: fadein 1s;
+       -moz-animation: fadein 1s;
+        -ms-animation: fadein 1s;
+         -o-animation: fadein 1s;
+            animation: fadein 1s;
+}
+
+.abt_content {
+	min-height: 520px;
+	width: 100%;
+}
+
+#about_table {
+	margin-left: 53%;
+}
+
+/** ABOUT CATEGORIES **/
+#about_categories {
+    padding: 0px;
+    margin: -375px 35% 10px auto;
+}
+
+#educ, 
+#design,
+#code,
+#passions,
+#collab,
+#off_the_clock {
+	font-size: 50px;
+	white-space: nowrap;
+	display: block;
+	text-transform: uppercase;
+	text-align: right;
+	text-decoration: none;
+	letter-spacing: 1px;
+	cursor: default;
+	-moz-transform: scale(0.5); 
+	-ms-transform: scale(0.5); 
+	-o-transform: scale(0.5); 
+	-webkit-transform: scale(0.5); 
+	transform: scale(0.5); 
+	-webkit-transition: all 0.6s linear;
+	-moz-transition: all 0.6s linear;
+	-o-transition: all 0.6s linear;
+	-ms-transition: all 0.6s linear;
+	transition: all 0.6s linear;
+}
+
+#about_categories div:hover {
+	margin-right: 25%;
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	-webkit-transform: scale(1); 
+	transform: scale(1); 
+}
+
+#educ1, 
+#design1,
+#code1,
+#passions1,
+#collab1,
+#off_the_clock1,
+#education_text,
+#design_text,
+#code_text,
+#passions_text,
+#collab_text,
+#off_the_clock_text {
+	display: none;
+}
+
+#educ:hover ~ #education_text,
+#design:hover ~ #design_text,
+#code:hover ~ #code_text,
+#passions:hover ~ #passions_text,
+#collab:hover ~ #collab_text,
+#off_the_clock:hover ~ #off_the_clock_text {
+	text-align: center;
+	display: block;
+	width: 45%;
+	display: block;
+	margin-top: -375px;
+	-webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
+}
+
+@media only screen and (max-width: 1150px){
+	.abt_content {
+		min-height: 750px;
+	}
+
+	#about_table, #about_table p {
+		width: 100%;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.about_portrait {
+		height: 250px;
+		display: block;
+		margin: 10px auto;
+	}
+
+	#about_categories {
+		width: 100%;
+		display: block;
+		margin-left: 7%;
+		margin-top: -200px;
+	}
+
+	#about_categories div:hover {
+		margin-top: 100px;
+		margin-right: 20px;
+	}
+
+	#educ, 
+	#design,
+	#code,
+	#passions,
+	#collab,
+	#off_the_clock,
+	#educ:hover ~ #education_text,
+	#design:hover ~ #design_text,
+	#code:hover ~ #code_text,
+	#passions:hover ~ #passions_text,
+	#collab:hover ~ #collab_text,
+	#off_the_clock:hover ~#off_the_clock_text {
+		display: none;
+	}
+
+	#educ1, 
+	#design1,
+	#code1,
+	#passions1,
+	#collab1,
+	#off_the_clock1 {
+		display: block;
+		float: left;
+		cursor: default;
+		font-size: 20px;
+		margin-right: 20px;
+		margin-top: 230px;
+		text-align: left;
+		text-decoration: none;
+		transform: none; 
+	}
+
+	#educ1:hover, 
+	#design1:hover,
+	#code1:hover,
+	#passions1:hover,
+	#collab1:hover,
+	#off_the_clock1:hover {
+		text-align: left;
+		margin-right: 20px;
+		border-bottom: solid;
+		transform: none;
+		transition: none;
+	}
+
+	#educ1:active ~ #education_text,
+	#design1:active ~ #design_text,
+	#code1:active ~ #code_text,
+	#passions1:active ~ #passions_text,
+	#collab1:active ~ #collab_text,
+	#off_the_clock1:active ~ #off_the_clock_text,
+	#educ1:hover ~ #education_text,
+	#design1:hover ~ #design_text,
+	#code1:hover ~ #code_text,
+	#passions1:hover ~ #passions_text,
+	#collab1:hover ~ #collab_text,
+	#off_the_clock1:hover ~ #off_the_clock_text {
+    	display: block;
+    	padding-top: 275px;
+    	padding-left: 15%;
+    	width: 60%;
+    }
+}
