@@ -25,12 +25,14 @@ body.fade-out {
 	background-image: url("aboutbackground.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: 100%;
 }
 
 #contact_body {
 	background-image: url("contactbackground.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: 100%;
 }
 
 #homepage {
