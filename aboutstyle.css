@@ -91,10 +91,10 @@
 #passions:hover ~ #passions_text,
 #collab:hover ~ #collab_text,
 #off_the_clock:hover ~ #off_the_clock_text {
+	position: fixed;
 	text-align: center;
 	display: block;
-	width: 45%;
-	display: block;
+	width: 30%;
 	margin-top: -375px;
 	-webkit-animation: fadein 2s;
        -moz-animation: fadein 2s;
