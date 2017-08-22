@@ -92,6 +92,7 @@
 .thumbnail .uxui_thumb1,
 .thumbnail .uxui_thumb2,
 .thumbnail .uxui_thumb3,
+.thumbnail .uxui_thumb4,
 .thumbnail .websites_thumb1,
 .thumbnail .websites_thumb2,
 .thumbnail .websites_thumb3,
@@ -120,6 +121,7 @@
 .thumbnail.active .uxui_thumb1,
 .thumbnail.active .uxui_thumb2,
 .thumbnail.active .uxui_thumb3,
+.thumbnail.active .uxui_thumb4,
 .thumbnail.active .websites_thumb1,
 .thumbnail.active .websites_thumb2,
 .thumbnail.active .websites_thumb3,
@@ -147,6 +149,7 @@
 .thumbnail.active .uxui_thumb1:hover,
 .thumbnail.active .uxui_thumb2:hover,
 .thumbnail.active .uxui_thumb3:hover,
+.thumbnail.active .uxui_thumb4:hover,
 .thumbnail.active .websites_thumb1:hover,
 .thumbnail.active .websites_thumb2:hover,
 .thumbnail.active .websites_thumb3:hover,
@@ -178,8 +181,13 @@
 }
 
 .thumbnail.active .uxui_thumb3 {
-	-webkit-transform: rotate(30deg) translateX(800px) translateY(-330px);
-		transform: rotate(30deg) translateX(800px) translateY(-330px);
+	-webkit-transform: rotate(30deg) translateX(800px) translateY(-370px);
+		transform: rotate(30deg) translateX(800px) translateY(-370px);
+}
+
+.thumbnail.active .uxui_thumb4 {
+	-webkit-transform: rotate(-30deg) translateX(650px) translateY(620px);
+		transform: rotate(-30deg) translateX(650px) translateY(620px);
 }
 
 .thumbnail.active .websites_thumb1 {
@@ -345,6 +353,7 @@
 #uxui_thumb1_modal,
 #uxui_thumb2_modal,
 #uxui_thumb3_modal,
+#uxui_thumb4_modal,
 #websites_thumb1_modal,
 #websites_thumb2_modal,
 #websites_thumb3_modal,
@@ -388,6 +397,7 @@
 #uxui_thumb1_caption,
 #uxui_thumb2_caption,
 #uxui_thumb3_caption,
+#uxui_thumb4_caption,
 #websites_thumb1_caption,
 #websites_thumb2_caption,
 #websites_thumb3_caption,

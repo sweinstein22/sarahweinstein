@@ -3,6 +3,7 @@ $(document).ready(function() {
 	var uxui_thumb1_img = document.getElementById("img01");
 	var uxui_thumb2_img = document.getElementById("img02");
 	var uxui_thumb3_img = document.getElementById("img03");
+	var uxui_thumb4_img = document.getElementById("img19");
 	var websites_thumb1_img = document.getElementById("img04");
 	var websites_thumb2_img = document.getElementById("img05");
 	var websites_thumb3_img = document.getElementById("img06");
@@ -32,6 +33,10 @@ $(document).ready(function() {
 	uxui_thumb3.onclick = function() {
 	    uxui_thumb3_modal.style.display = "block";
 	    uxui_thumb3_img.src='portfolio_images/large/atmosclear_user_testing.png';
+	}
+	uxui_thumb4.onclick = function() {
+	    uxui_thumb4_modal.style.display = "block";
+	    uxui_thumb4_img.src='portfolio_images/large/caffeinated_kitties_display.png';
 	}
 	websites_thumb1.onclick = function() {
 	    websites_thumb1_modal.style.display = "block";
@@ -110,6 +115,9 @@ $(document).ready(function() {
 	}
 	close_3.onclick = function() {
 	    uxui_thumb3_modal.style.display = "none";
+	}
+	close_19.onclick = function() {
+	    uxui_thumb4_modal.style.display = "none";
 	}
 	close_4.onclick = function() {
 	    websites_thumb1_modal.style.display = "none";
